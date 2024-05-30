@@ -317,4 +317,108 @@
 // let B=prompt("enter word B");
 // console.log(A);
 // console.log(B);
+//----------------------------------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------------------------------
 
+
+
+
+
+
+// Assignment 3(1)
+
+
+
+
+
+
+// 14) Write a program that reads the selling price S and buying price B of a product and checks if S
+// is greater than B .
+// Explanation:
+// For example, if the given selling price S 600 and the buying price B 500 ,
+// The S is greater than B . (600 is greater than 500).
+// The output should be True as the selling price is greater than the buying price.
+
+// let S=prompt("enter Selling Price ");
+// let B=prompt("enter  Buying price");
+// S=parseInt(S);
+// B=parseInt(B);
+// console.log(S);
+// console.log(B);
+
+// if(S>B){
+//     console.log(true);
+// }
+// else if(S<B)
+// {
+//     console.log(false);
+// }
+// else{
+//     console.log("wrong input");
+// }
+
+//----------------------------------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------------------------------
+
+// 15) Write a program that reads two numbers A and B and checks, If A is less than or equal to B .
+// If B is less than or equal to A . Print the result as shown in the sample output.
+// Explanation:
+// For example, if the given numbers are A = 5 and B = 3 ,
+// ✖A is less than or equal to B . (5 is not less than or equal to 3)
+// ✔B is less than or equal to A . (3 is less than or equal to 5)
+// The output should be
+// A <= B is False
+// B <= A is True
+
+// let A=prompt("enter number A ");
+// let B=prompt("enter  number B");
+// A=parseInt(A);
+// B=parseInt(B);
+// console.log(A);
+// console.log(B);
+
+// if(A<=B){
+//     console.log("A<=B",true);
+// }
+// else if(B<=A){
+//     console.log("B<=A",true);
+// }
+// else{
+//     console.log("wrong input");
+// }
+
+
+
+//----------------------------------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------------------------------
+
+
+
+// 16) Write a program to check if the last three characters in the two given strings are the same.
+// Explanation:
+// Given strings are “apple” , “pimple” . In both the strings, the last three characters “ple” are
+// common. So the output should be True .
+
+
+// let str1=prompt("Enter the string 1");
+// console.log("str1",str1);
+// let lenOfstr1=str1.length;
+
+
+// let str2=prompt("Enter the string 2");
+// let lenOfstr2=str2.length;
+// console.log("str2",str2);
+
+
+
+// if(    (str1[lenOfstr1-1]==str2[lenOfstr2-1]) && 
+//        (str1[lenOfstr1-2]==str2[lenOfstr2-2]) && 
+//        (str1[lenOfstr1-3]==str2[lenOfstr2-3])   )
+//     {
+//         console.log("last three char of str1 =",str1[lenOfstr1-1],str1[lenOfstr1-2],str1[lenOfstr1-3]);
+//         console.log("last three char of str2 =",str2[lenOfstr2-1],str2[lenOfstr2-2],str2[lenOfstr2-3]);
+//       console.log(true)
+// }
+// else{
+//     console.log("wrong input or",false);
+// }
