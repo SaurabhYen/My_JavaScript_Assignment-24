@@ -228,7 +228,7 @@
 // }
 
 
-// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------------------------------------------------
 
 // 11) Write a program that reads a word and checks if the first letter and last letter of the word
 // are not the same.
@@ -305,7 +305,7 @@
 
 
 // ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+//-------------------------------------------------------------------------------------------------------------
 
 // 14) Write a program that reads two words A and B and checks if the second word B is the last
 // part of the first word A .
@@ -313,54 +313,156 @@
 // For example, if the given words are A = Blackhole and B = hole , The output should be True
 // as hole is the last part of the word Blackhole.
 
-// let A=prompt("enter word A");
-// let B=prompt("enter word B");
-// console.log(A);
-// console.log(B);
+// let  A=prompt("enter the value Of A");
+// let  B=prompt("enter the value Of B");
+
+// let Blen=B.length;
+// console.log("Blen",Blen);
+// let lastchacter=A.slice(A.length-Blen);
+// console.log(lastchacter);
+
+// if(lastchacter===B)
+// {
+//     console.log("lastchacter Of A=",lastchacter,"","B=",B,true);
+// }
+// else{
+//     console.log("lastchacter of A=",lastchacter,"","B=",B,false);
+// }
+
+
+
+
 //----------------------------------------------------------------------------------------------------------------------------
 //---------------------------------------------------------------------------------------------------------------------------
 
 
 
 
+// 15) Write a program that reads two words A , B , and an index I . Check if B starts at index I in A .
+// Explanation:
+// For example, if the given words are A = Repeat , B = pea , and the index is I 2 ,
+// • The word Pea is a part of the word Repeat.
+// • The word Pea starts at the 2nd index of the word Repeat.
+// The output should be True as the string pea starts from the index 2 of the string Repeat.
+
+// let A=prompt("Enter A Word A");
+// let  B=prompt("Enter A Word B");
+// let I=parseInt(prompt("Enter Index I "));
+// let wAtIdxIatA=A.slice(I,I+B.length);
+// console.log(A.slice(I,I+B.length));
+
+// if(wAtIdxIatA===B){
+//     console.log("wAtIdxIatA",wAtIdxIatA,"   ","B",B,"  ",true)
+// }
+// else{
+//     console.log(false);
+// }
 
 
-// Assignment 3(1)
 
 
 
 
 
 
-// 14) Write a program that reads the selling price S and buying price B of a product and checks if S
+
+
+
+
+
+//----------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
+
+// 16) Write a program to check if the first three characters in the two given strings are the same.
+// Explanation:
+// When the given words are "Apple" and "Application", first three characters in both the
+// strings are the same ("App")
+// When the given words are "Android" and "Application", the first three characters in both the
+// strings are different ("And" != "App")
+
+
+// let A=prompt("Enter A Word A");
+// let  B=prompt("Enter A Word B");
+// if(A.slice(0,3)===B.slice(0,3)){
+
+//     console.log(true)
+// }
+// else{
+//     console.log(false);
+// }
+
+
+
+//----------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
+
+// 17) Write a program that reads two strings S1 and S2 , and checks if S2 is the first part of S1 .
+// Note: No.of characters in the first part of S1 is equal to the number of characters in S2 .
+// Explanation:
+// For example, if the given strings are S1 = rainbow and S2 = rain ,
+// The first part of S1 is rain.
+// The characters in S2 are rain.
+// The first part of S1 and the characters of S2 are the same.
+// The output should be True as the S2 rain is the first part of the S1 rainbow.
+
+// let s1=prompt("Enter string s1");
+// let s2=prompt("Enter string s2");
+// if(s1.slice(0,s2.length)===s2){
+//     console.log(true);
+// }
+// else{
+//     console.log(false);
+// }
+
+//==============================================================================================================
+//==============================================================================================================
+// 18) Write a program that reads the selling price S and buying price B of a product and checks if S
 // is greater than B .
 // Explanation:
 // For example, if the given selling price S 600 and the buying price B 500 ,
 // The S is greater than B . (600 is greater than 500).
 // The output should be True as the selling price is greater than the buying price.
 
-// let S=prompt("enter Selling Price ");
-// let B=prompt("enter  Buying price");
-// S=parseInt(S);
-// B=parseInt(B);
-// console.log(S);
-// console.log(B);
+
+// let S=parseInt(prompt("Enter Selling Price"));
+// let B=parseInt(prompt("Enter Buying Price"));
+// console.log("Selling price=",S);
+// console.log("Buying price=",B);
 
 // if(S>B){
-//     console.log(true);
-// }
-// else if(S<B)
-// {
-//     console.log(false);
+//     console.log("True as the selling price is greater than the buying price");
 // }
 // else{
-//     console.log("wrong input");
+//     console.log(false)
 // }
 
-//----------------------------------------------------------------------------------------------------------------------------
-//---------------------------------------------------------------------------------------------------------------------------
+//======================================================================================================================
+//======================================================================================================================
 
-// 15) Write a program that reads two numbers A and B and checks, If A is less than or equal to B .
+// 19) Write a program that reads a string and a number N and checks if the first N characters of
+// the string and the last N characters of the string are, not the same.
+// Explanation:
+// For example, if the given string is toronto and the number N 2 ,
+// The first 2 characters of toronto are to.
+// The last 2 characters of toronto are to.
+// The first 2 characters (to) and the last 2 characters (to) are the same.
+// The output should be False as the first 2 characters and the last 2 characters are the same.
+
+
+// let string=prompt("enter  string to check it start with same charecter and end with saame charecter or not ");
+// console.log(string);
+// let N=parseInt(prompt("enter Number "));
+// if(string.slice(string.length-N)===string.slice(0,N)){
+//     console.log("False as the first  ",N,"  characters and the last ",N," characters are the same.");
+// }
+// else{
+//     console.log(false);
+// }
+
+//=======================================================================================================
+//======================================================================================================================
+
+// 20) Write a program that reads two numbers A and B and checks, If A is less than or equal to B .
 // If B is less than or equal to A . Print the result as shown in the sample output.
 // Explanation:
 // For example, if the given numbers are A = 5 and B = 3 ,
@@ -388,13 +490,14 @@
 // }
 
 
+//=======================================================================================================
+//======================================================================================================================
 
 //----------------------------------------------------------------------------------------------------------------------------
-//---------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------
 
 
-
-// 16) Write a program to check if the last three characters in the two given strings are the same.
+// 21) Write a program to check if the last three characters in the two given strings are the same.
 // Explanation:
 // Given strings are “apple” , “pimple” . In both the strings, the last three characters “ple” are
 // common. So the output should be True .
