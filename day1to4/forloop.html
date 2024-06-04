@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        
+      
+    //    // Q1.print even number
+    //     for(let i=2;i<=100;i+=2){
+    //             console.log(i);
+    //     }
+
+    //    // Q2.print odd number
+    //     for(let i=1;i<=100;i+=2){
+    //             console.log(i);
+    //     }
+
+    // Q3.print prime number
+    
+
+    let N=parseInt(prompt(" Enter Number to print prime number "));
+
+    for(let i=2; i<=N;i++){  
+          //i=2
+
+          // i=3
+
+          // i=4
+
+          // i=5
+
+          // i=6
+          
+          // i=7
+
+        let j;  
+        for( j=2;j<i;j++){   
+      //j=2    //2<2  wrong
+
+      //j=2    //2<3  true
+
+      //j=2    //2<4  true
+
+       //j=2    //2<5  true
+       //j=3    //3<5  true
+       //j=4    //4<5  true
+       //j=5    //5<5  false
+
+       //j=2    //2<6  true
+
+       //j=2    //2<7  true
+       //j=3    //3<7  true
+       //j=4    //4<7  true
+       //j=5    //5<7  true
+       //j=6    //6<7  true
+       //j=7    //7<7  false
+
+
+
+                //(3%2==0) wrong;
+
+                //(4%2==0) true ,loop break;  
+               
+                //(5%2==0) wrong;  
+                //(5%3==0) wrong;  
+                //(5%4==0) wrong;  
+
+                //(6%2==0) true ,loop break;
+
+                //(7%2==0) wrong;
+                //(7%3==0) wrong;
+                //(7%4==0) wrong;
+                //(7%5==0) wrong;
+                //(7%6==0) wrong;
+
+                
+              if(i % j==0){
+               
+                 break;
+               
+            }
+
+        }
+
+        if(i==j){
+        //(2=2) 2
+        //(3=3) 3
+        //(4==2)
+        //(5==5)5
+        //(6==2)
+        //(7==7)7
+            console.log(i);
+        }
+
+    }
+
+ 
+    // let N=parseInt(prompt(" Enter Number to print prime number "));
+    // for(let i=2;i<=20;i++){
+      
+    //     let j;
+    //     for(j=2;j<i;j++){
+    //         if(i % j== 0){
+    //             break;
+    //         }
+    //     }
+    //     if(j==i){
+    //         console.log(i);
+    //     }
+        
+    // }
+
+
+
+
+    </script>
+</body>
+</html>

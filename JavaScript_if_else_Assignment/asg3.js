@@ -330,6 +330,19 @@
 // }
 
 
+// Another Method using string methods
+
+
+// let  A=prompt("enter the value Of A");
+// let  B=prompt("enter the value Of B");
+// if(A.endsWith(B)){
+//     console.log(true);
+// }
+// else{
+//     console.log(false)
+// }
+
+
 
 
 //----------------------------------------------------------------------------------------------------------------------------
